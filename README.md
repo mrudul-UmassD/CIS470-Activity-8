@@ -46,6 +46,8 @@ https://github.com/umassd-dataviz/CIS470-Activity-8/assets/119906645/8ca7d3a7-d2
 
 #### Deliverables of the Assignment:
 
+1234
+
 Running lambda function in AWS Lambda: Include the link to the running lambda function.
 
 <i> In the next Activity, we will use this lambda function to add test, and run it. </i>
