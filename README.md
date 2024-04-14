@@ -6,7 +6,7 @@ Running version: https://2uwhs0bpgj.execute-api.us-east-1.amazonaws.com/default/
 ### Activity Objectives
 
 Experiment with the use of AWS Lambda functions, and deploy them to AWS Lambda.
-Run a CI/CD pipeline to deploy your Lambda function to AWS Lambda.
+Run a CI/CD pipeline to deploy your Lambda function to AWS Lambda.  
 
 ### Activity Details
 
