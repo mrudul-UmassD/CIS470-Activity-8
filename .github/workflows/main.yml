@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -19,9 +19,31 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+  test:
+      needs: build-and-deploy
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+  
+        - name: Run tests
+          run: |
+            npm install jest
+            ./node_modules/.bin/jest --coverage
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with: 
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
       - name: Zip files
         run: zip -r deployment-package.zip ./*
-
       - name: Deploy to Lambda
         run: |
           aws lambda update-function-code --function-name CIS470-Activity-8 --zip-file fileb://deployment-package.zip
