@@ -19,7 +19,7 @@ Note that Lambda  is free.
 
 #### Create an AWS Lambda function
 Create a new Lambda function in your AWS account. The Lambda function name should be `CIS470-Activity-8`.
-1. In the AWS console, click **Lambda** in the navigation pane.
+1. In the AWS console, click **Lambda** in the  navigation pane.
 
 <img src="./imgs/Lambda1.png">
 
