@@ -9,7 +9,7 @@ Experiment with the use of AWS Lambda functions, and deploy them to AWS Lambda.
 Run a CI/CD pipeline to deploy your Lambda function to AWS Lambda.  
 
 ### Activity Details
-
+ 
 ##### Create a GitHub repository
 You can fork the repository [here](https://github.com/umassd-dataviz/CIS470-Activity-8) and create a new repository. or You can start your repository.
 
